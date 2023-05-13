@@ -6,6 +6,8 @@ module.exports = {
     jest: true,
   },
   extends: ["xo", "prettier"],
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
   overrides: [
     {
       extends: ["xo-typescript"],
@@ -17,6 +19,4 @@ module.exports = {
     sourceType: "module",
   },
   rules: {},
-  parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
 };
