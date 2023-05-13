@@ -1,4 +1,4 @@
-const gameBoard = (rows: number, columns: number) => {
+const randomBoardGenerator = (rows: number, columns: number) => {
   const board = [];
   for (let y = 0; y < rows; y++) {
     const row = [];
@@ -13,4 +13,17 @@ const gameBoard = (rows: number, columns: number) => {
   console.log(board);
 };
 
-gameBoard(5, 5);
+const emptyBoardGenerator = (rows: number, columns: number) => {
+  const board = [];
+  for (let y = 0; y < rows; y++) {
+    const row = [];
+
+    for (let x = 0; x < columns; x++) {
+      row.push(0);
+    }
+
+    board.push(row);
+  }
+
+  console.log(board);
+};
