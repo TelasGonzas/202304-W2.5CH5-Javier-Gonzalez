@@ -1,4 +1,5 @@
 export const setGameBoard = (gameBoard: number[][]) => {
+
   let screenBoard = "";
 
   for (let i = 0; i < gameBoard.length; i++) {

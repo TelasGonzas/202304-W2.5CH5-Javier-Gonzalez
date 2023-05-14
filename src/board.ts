@@ -1,5 +1,6 @@
-export const randomBoardGenerator = (rows: number, columns: number) => {
+export const randomBoardGenerator = (rows: number,columns: number): number[][] => {
   const board: number[][] = [];
+
   for (let y = 0; y < rows; y++) {
     board[y] = [];
 
