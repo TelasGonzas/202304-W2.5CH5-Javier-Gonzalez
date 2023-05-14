@@ -1,5 +1,5 @@
-const randomBoardGenerator = (rows: number, columns: number) => {
-  const board = [];
+export const randomBoardGenerator = (rows: number, columns: number) => {
+  const board: number[][] = [];
   for (let y = 0; y < rows; y++) {
     const row = [];
 
@@ -10,11 +10,11 @@ const randomBoardGenerator = (rows: number, columns: number) => {
     board.push(row);
   }
 
-  console.log(board);
+  return board;
 };
 
-const emptyBoardGenerator = (rows: number, columns: number) => {
-  const board = [];
+export const emptyBoardGenerator = (rows: number, columns: number) => {
+  const board: number[][] = [];
   for (let y = 0; y < rows; y++) {
     const row = [];
 
@@ -25,5 +25,5 @@ const emptyBoardGenerator = (rows: number, columns: number) => {
     board.push(row);
   }
 
-  console.log(board);
+  return board;
 };
